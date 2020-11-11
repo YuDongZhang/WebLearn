@@ -8,15 +8,16 @@
 <body>
 
 
-    <div id="div1">div1</div>
-    <div id="div2">div2</div>
+    <div id="div1" onclick="funDiv1">div1</div>
+    <div id="div2" onclick="funDiv2">div2</div>
 
-    <div id="div3">div3</div>
+    <div id="div3" onclick="funDiv3">div3</div>
 
-    <div class="cls1">div4</div>
-    <div class="cls1">div5</div>
+    <div class="cls1" onclick="funDiv4">div4</div>
+    <div class="cls1" onclick="funDiv5">div5</div>
 
     <input type="text" name="username">
+	<button type="button" onclick="fun()">查看弹窗</button>
 
 <script>
     /*
@@ -42,7 +43,11 @@
      */
 
     //2.根据元素名称获取元素对象们。返回值是一个数组
-    var divs = document.getElementsByTagName("div");
+    var divs = document.getElementsByTagName("div1");
+	function funDiv1(){
+		var div1 = document.getElementById("div1")
+		div1.innerHTML("div1 "+divs)
+	}
     //alert(divs.length);
     //3.根据Class属性值获取元素对象们。返回值是一个数组
     var div_cls = document.getElementsByClassName("cls1");
@@ -52,7 +57,11 @@
     //alert(ele_username.length);
 
     var table = document.createElement("table");
-    alert(table);
+	
+	function fun(){
+		alert(table);
+	}
+    
 
 
 </script>

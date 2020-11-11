@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>特殊语法</title>
+	<button type="button" onclick="funAlert()" >特殊语法</button>
     <script>
         //1. 语句以;结尾，如果一行只有一条语句则 ;可以省略 (不建议)
         var a = 3;
@@ -20,9 +21,13 @@
         function fun(){
             b = 4;
         }
-        fun();
+		
+        fun(); 
 
-        alert(b);
+		function funAlert(){
+			alert(b);
+		}
+        
     </script>
 </head>
 <body>

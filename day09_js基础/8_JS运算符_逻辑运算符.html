@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>比较运算符</title>
+	<button type="button"  onclick="fun()">点击弹窗测试</button><br>
+	
     <script>
         /*
          * 逻辑运算符:
@@ -60,7 +62,7 @@
         document.write("<hr>");
 
 
-
+        function fun(){
         obj = "123";
         if(obj != null && obj.length > 0){//防止空指针异常
             alert(123);
@@ -69,6 +71,7 @@
         if(obj){//防止空指针异常
             alert(111);
         }
+		}
 
 
     </script>

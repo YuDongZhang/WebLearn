@@ -6,9 +6,11 @@
 
 </head>
 <body>
-    <input id="openBtn" type="button" value="打开窗口">
+    <input id="openBtn" type="button"  value="打开窗口">
+	<br />
     <input id="closeBtn" type="button" value="关闭窗口">
-
+	<br />
+	<input id="funTest" type="button" value="取消弹窗">
     <script>
         /*
             Window：窗口对象
@@ -109,7 +111,10 @@
        alert(h2);
 */
         var openBtn = window.document.getElementById("openBtn");
-        alert(openBtn);
+		openBtn.onclick = function fun(){
+			alert(openBtn);
+		}
+        
         /*document.getElementById("");*/
     </script>
 </body>

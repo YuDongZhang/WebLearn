@@ -13,7 +13,7 @@
     //获取btn
     var btn_set =document.getElementById("btn_set");
     btn_set.onclick = function(){
-        //1.获取a标签
+        //1.获取a标签 , 给标签设置属性
         var element_a = document.getElementsByTagName("a")[0];
         element_a.setAttribute("href","https://www.baidu.com");
     }
@@ -22,7 +22,7 @@
     //获取btn
     var btn_remove =document.getElementById("btn_remove");
     btn_remove.onclick = function(){
-        //1.获取a标签
+        //1.获取a标签 , 给标签删除属性
         var element_a = document.getElementsByTagName("a")[0];
         element_a.removeAttribute("href");
     }

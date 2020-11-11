@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>for语句</title>
+	<button type="button" onclick="fun()" >弹出循环结果</button>
     <script>
 
        //1 ~ 100 求和  5050
@@ -10,7 +11,10 @@
         for (var i = 1; i <= 100; i ++){
             sum += i;
         }
-        alert(sum);
+		function fun(){
+			alert(sum);
+		}
+        
 
     </script>
 </head>

@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Global对象</title>
+	<button type="button" onclick="fun()" >Global对象运行js片段</button>
+	<br />
     <script >
 
         /*
@@ -53,7 +55,11 @@
         document.write(isNaN(a));
 
         var jscode = "alert(123)";
-        eval(jscode);
+		
+		function fun(){
+			eval(jscode);
+		}
+        
 
     </script>
 </head>

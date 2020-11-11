@@ -1,21 +1,27 @@
 
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title >Title</title>
-    <!--
-       内部JS
-       外部JS
-   -->
+	
+	<!-- 外部 : 这个地方是需要注意路径的 -->
+	<script src="/day01js/test.js"></script>
+	
+	<input type="button" value="点击弹窗" onclick="fun()"/>
+    
+	<!-- 内部 : js -->
     <script>
-        alert("Hello World");
+		
+		function fun(){
+			alert("Hello World");
+		}
+        
     </script>
 
-    <script src="js/a.js"></script>
+    
+	
+	
 
 </head>
 <body>
