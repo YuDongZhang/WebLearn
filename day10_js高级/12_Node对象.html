@@ -37,6 +37,7 @@
     <!--<input type="button" id="del" value="删除子节点">-->
 	<br />
 	<button onclick="fun()">弹窗测试</button>
+	
 <script>
     //1.获取超链接
     var element_a = document.getElementById("del");
@@ -47,8 +48,10 @@
         div1.removeChild(div2);
     }
 
+
     //1.获取超链接
     var element_add = document.getElementById("add");
+	
     //2.绑定单击事件
     element_add.onclick = function(){
         var div1 = document.getElementById("div1");
